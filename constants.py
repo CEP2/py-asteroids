@@ -1,2 +1,8 @@
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
+
+# player
+PLAYER_RADIUS = 20
+
+# drawing
+LINE_WIDTH = 2
