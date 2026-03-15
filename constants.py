@@ -6,3 +6,6 @@ PLAYER_RADIUS = 20
 
 # drawing
 LINE_WIDTH = 2
+
+#rotation
+PLAYER_TURN_SPEED = 300
