@@ -9,3 +9,6 @@ LINE_WIDTH = 2
 
 #rotation
 PLAYER_TURN_SPEED = 300
+
+#speed
+PLAYER_SPEED = 200
