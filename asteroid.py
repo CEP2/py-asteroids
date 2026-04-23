@@ -28,7 +28,7 @@ class Asteroid(CircleShape):
         if self.radius <= constants.ASTEROID_MIN_RADIUS:
             return
         else:
-            log_event("asteroid split")
+            log_event("asteroid_split")
             self.spawn_smaller_asteroid()
             self.spawn_smaller_asteroid()
 
