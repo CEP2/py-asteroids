@@ -38,11 +38,18 @@ def main():
             u.update(dt)
         #collision detection
         for a in asteroids:
-            is_hit = a.collides_with(player)
-            if is_hit:
+            is_hit_player = a.collides_with(player)
+            if is_hit_player:
                 log_event("player_hit")
                 print("Game over!")
                 sys.exit()
+            
+            for s in shots:
+                is_hit_shot = a.collides_with(s)
+                if is_hit_shot:
+                    s.kill()
+                    a.split()
+                    log_event("asteroid_shot")
 
         #render block
         screen.fill((0,0,0))
